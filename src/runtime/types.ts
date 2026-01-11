@@ -26,5 +26,6 @@ export interface IVkPixelTmr {
 }
 
 export interface IVkPixel {
-  tmr?: IVkPixelTmr
+  pageView: (payload: Partial<IPageViewPayload>) => void
+  push: (payload: Partial<IPushPayload>) => void
 }

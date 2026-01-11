@@ -1,6 +1,6 @@
 import { defineNuxtPlugin, useHead } from '#app'
 import { useScript } from '#nuxt-scripts/composables/useScript'
-import type { IVkPixelTmr, IPushPayload, IPageViewPayload } from './types'
+import type { IVkPixel, IVkPixelTmr } from './types'
 
 export default defineNuxtPlugin({
   parallel: true,
@@ -35,17 +35,21 @@ export default defineNuxtPlugin({
       ],
     })
 
-    const vkPixel: IVkPixelTmr = {
-      push(payload: Omit<IPushPayload, 'id'>) {
+    const vkPixel: IVkPixel = {
+      push(payload) {
         proxy.push({
+          type: 'pageView',
+          url: window.location.href,
+          start: (new Date()).getTime(),
           ...payload,
           id,
         })
       },
-      pageView(payload: Omit<IPageViewPayload, 'id'>) {
+      pageView(payload) {
         proxy.pageView({
-          ...payload,
           id,
+          url: payload.url ? payload.url : window.location.href,
+          referrer: payload.referrer ? payload.referrer : document.referrer,
         })
       },
     }

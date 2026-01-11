@@ -11,7 +11,7 @@
     "name": "Dmitrii Lartsev <https://github.com/chemist-repo/>",
     "url": "https://github.com/chemist-repo"
   },
-  "homepage": "chemist-repo/nuxtjs-vk-pixel",
+  "homepage": "https://github.com/chemist-repo/nuxtjs-vk-pixel",
   "license": "MIT",
   "exports": {
     ".": {
