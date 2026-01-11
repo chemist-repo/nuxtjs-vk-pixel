@@ -1,7 +1,7 @@
 {
   "name": "nuxtjs-vk-pixel",
   "type": "module",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "NuxtJS VK Pixel module",
   "repository": {
     "type": "git",
