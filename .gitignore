@@ -24,6 +24,9 @@ dist
 .build-*
 .netlify
 
+# Npm
+.npmrc.dev
+
 # Env
 .env
 
