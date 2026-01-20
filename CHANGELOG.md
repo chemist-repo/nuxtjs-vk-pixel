@@ -1,6 +1,22 @@
 # Changelog
 
 
+## v0.0.5
+
+[compare changes](https://github.com/chemist-repo/nuxtjs-vk-pixel/compare/v0.0.4...v0.0.5)
+
+### 🩹 Fixes
+
+- Correctly merges options for vkPixel ([1fedf0c](https://github.com/chemist-repo/nuxtjs-vk-pixel/commit/1fedf0c))
+
+### 🏡 Chore
+
+- **release:** V0.0.4 ([2514878](https://github.com/chemist-repo/nuxtjs-vk-pixel/commit/2514878))
+
+### ❤️ Contributors
+
+- Ларцев Дмитрий Владимирович <larcev.dima@yandex.ru>
+
 ## v0.0.4
 
 [compare changes](https://github.com/chemist-repo/nuxtjs-vk-pixel/compare/v0.0.2...v0.0.4)
