@@ -28,8 +28,8 @@ export default defineNuxtModule<ModuleOptions>({
   setup(options, nuxt) {
     nuxt.options.runtimeConfig.public.vkPixel = {
       ...(nuxt.options.runtimeConfig.public.vkPixel ?? {}),
-      ...options,
       ...defaultOptions,
+      ...options,
     }
 
     const resolver = createResolver(import.meta.url)
